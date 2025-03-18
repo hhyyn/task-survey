@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제 습관 설문조사</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css" />
+    <!-- jQuery 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>과제 습관 설문조사</h1>
+            <p>10초 설문조사 하고 기프티콘 받기🎁</p>
+        </div>
+        
+        <form id="surveyForm" class="form-container">
+            <div class="question-block">
+                <div class="question">
+                    <div class="assignment-box">
+                        <div class="assignment-header">
+                            <div class="assignment-icon">📝</div>
+                            <div class="assignment-title">과제 안내</div>
+                        </div>
+                        <div class="assignment-content">5분 자기소개 프레젠테이션을 준비해오세요.</div>
+                    </div>
+                Q1. 이 과제를 실제로 언제 완성하실 것 같나요?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="deadline-day" name="completion-time" value="마감 당일" required>
+                        <label for="deadline-day">마감 당일</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="day-before" name="completion-time" value="마감 전날">
+                        <label for="day-before">마감 전날</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="two-three-days" name="completion-time" value="마감 2-3일 전">
+                        <label for="two-three-days">마감 2-3일 전</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="week-before" name="completion-time" value="마감 일주일 전">
+                        <label for="week-before">마감 일주일 전</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="right-after" name="completion-time" value="과제 부여 직후">
+                        <label for="right-after">과제 부여 직후</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <div class="question">Q2. 과제를 작은 단계로 나누고 마감일까지 체계적인 일정을 정해주는 서비스가 있다면 사용해보실 의향이 있습니까?</div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="yes" name="service-interest" value="네" required>
+                        <label for="yes">네</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="no" name="service-interest" value="아니오">
+                        <label for="no">아니오</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <div class="question">Q3. 기프티콘 발송을 위해 전화번호를 입력해주세요.</div>
+                <div class="contact-input-group">
+                    <input type="tel" id="contact" name="contact" class="input-field" placeholder="예: 010-1234-5678" required>
+                </div>
+                <div class="privacy-notice">
+                    * 수집된 개인정보는 기프티콘 발송 목적으로만 사용되며, 발송 완료 후 즉시 파기됩니다.
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">제출하기</button>
+        </form>
+        
+        <div class="footer">
+            수집된 정보는 연구 목적으로만 사용됩니다
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
